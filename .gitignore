@@ -1,13 +1,18 @@
-# Terraform working directory
-.terraform/
+# Terraform generated files
+**/.terraform/
 
-# Terraform state files
+# Terraform state
 *.tfstate
 *.tfstate.*
 
 # Sensitive variable files
 *.tfvars
 *.tfvars.json
+
+# Private keys and environment files
+*.pem
+*.key
+.env
 
 # Crash logs
 crash.log
