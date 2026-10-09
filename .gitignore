@@ -1,12 +1,16 @@
-# Terraform
-.terraform/
-*.tfstate
-*.tfstate.*
-.terraform.lock.hcl
-
-# Sensitive files
-*.tfvars
-*.tfvars.json
-
-# VS Code
-.vscode/
+Set-Content .gitignore @(
+    "# Terraform working directory"
+    ".terraform/"
+    ""
+    "# Terraform state files"
+    "*.tfstate"
+    "*.tfstate.*"
+    ""
+    "# Sensitive variable files"
+    "*.tfvars"
+    "*.tfvars.json"
+    ""
+    "# Crash logs"
+    "crash.log"
+    "crash.*.log"
+)
