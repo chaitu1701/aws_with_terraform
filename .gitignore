@@ -1,16 +1,14 @@
-Set-Content .gitignore @(
-    "# Terraform working directory"
-    ".terraform/"
-    ""
-    "# Terraform state files"
-    "*.tfstate"
-    "*.tfstate.*"
-    ""
-    "# Sensitive variable files"
-    "*.tfvars"
-    "*.tfvars.json"
-    ""
-    "# Crash logs"
-    "crash.log"
-    "crash.*.log"
-)
+# Terraform working directory
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Crash logs
+crash.log
+crash.*.log
